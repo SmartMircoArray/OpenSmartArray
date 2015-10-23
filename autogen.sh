@@ -2,8 +2,8 @@
 
 set -e
 
-test -f src/ceph.in || {
-    echo "You must run this script in the top-level ceph directory"
+test -f src/osa.in || {
+    echo "You must run this script in the top-level open smart array directory"
     exit 1
 }
 
@@ -45,6 +45,4 @@ aclocal -I m4 --install
 autoconf
 autoheader
 automake -a --add-missing -Wall
-( cd src/gmock && autoreconf -fvi; )
-( cd src/rocksdb && autoreconf -fvi; )
 exit
