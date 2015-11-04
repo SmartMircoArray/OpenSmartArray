@@ -1,3 +1,9 @@
-[submodule "dpdk"]
-	path = dpdk
-	url = ../dpdk
+[submodule "seastar"]
+	path = seastar
+	url = https://github.com/scylladb/seastar.git
+[submodule "src/dpdk"]
+	path = src/dpdk
+	url = https://github.com/scylladb/dpdk.git
+[submodule "src/spdk"]
+	path = src/spdk
+	url = https://github.com/spdk/spdk.git
